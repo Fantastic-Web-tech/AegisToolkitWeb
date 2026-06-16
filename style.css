@@ -1,0 +1,67 @@
+/* Core Layout Themes */
+body {
+    background-color: #0f172a;
+    color: #f8fafc;
+}
+
+.app-container {
+    max-width: 1000px;
+}
+
+.card {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+}
+
+/* Custom Overrides for Interactive Input Containers */
+.crypto-input {
+    background-color: #0f172a;
+    border: 1px solid #334155;
+    color: #f8fafc;
+}
+
+.crypto-input:focus {
+    background-color: #0f172a;
+    color: #f8fafc;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 0.25rem rgba(59, 130, 246, 0.25);
+}
+
+/* Force Form Fields to Render White Placeholders */
+.crypto-input::placeholder {
+    color: #ffffff !important;
+    opacity: 1 !important; /* Overrides default browser opacity settings */
+}
+
+/* Fallbacks for various rendering engines */
+.crypto-input:-ms-input-placeholder {
+    color: #ffffff !important;
+}
+
+.crypto-input::-ms-input-placeholder {
+    color: #ffffff !important;
+}
+
+/* Response Framework Containers */
+.output-box {
+    display: none;
+    background-color: #0f172a;
+    font-family: monospace;
+    word-break: break-all;
+}
+
+.visible-box {
+    display: block !important;
+}
+
+.output-encrypt {
+    border-left: 4px solid #3b82f6;
+}
+
+.output-decrypt {
+    border-left: 4px solid #64748b;
+}
+
+.output-hash {
+    border-left: 4px solid #198754;
+}
